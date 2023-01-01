@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Form</title>
+  <script src='//fw-cdn.com/1289383/2311311.js' chat='false'></script>
+</head>
+
+<body>
+  <h1>Welcome to form test</h1>
+  <div>
+    Identifier:<br /> <input id="identifier" type="text" />
+    <br /><br />
+  </div>
+  <div>
+    Data: <br /><textarea rows="12" cols="50" id="textarea"></textarea><br /><br />
+  </div>
+
+  <div>
+    <button id="action" type="button">Submit</button>
+  </div>
+  <script type="text/javascript">
+    const node = document.createElement('script');
+    node.src = '/js/core.js?_id=' + new Date().toISOString();
+    document.body.appendChild(node);
+
+  </script>
+
+</body>
+
+</html>

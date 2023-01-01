@@ -1,0 +1,32 @@
+.homepage {
+  .container-fluid {
+    margin: auto;
+  }
+  &__carousel {
+    .CarouselItem {
+      min-height: 410px;
+    }
+  }
+}
+
+.homepage-header {
+  .sq-hero-content__header {
+    font-size: 95px;
+    color: $white;
+    text-align: left;
+    span {
+      display: block;
+    }
+  }
+  .sq-hero-content__sub-header {
+    color: $white;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+   
+  }
+  .sq-hero-content__wrapper {
+    background: linear-gradient(90deg, black, transparent);
+  }
+}
+

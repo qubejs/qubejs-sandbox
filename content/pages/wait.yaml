@@ -1,0 +1,22 @@
+title: Coming soon
+template: apps/core/templates/page
+className: sq-page sq-error-page
+layout: apps/crm/layouts/page-spa
+containerTemplate: Blank
+container: DefaultContent
+items:
+      # First image with home content
+  - component: HeroContent
+    header: Thank you for visiting the Submission Page.
+    className: sq-hero-content--center
+    subHeader: |
+      Online worksheet submissions will <span class="sq-text-success">OPEN</span> on: ##dateFullTime|launchTime##. We will be live in
+  - inject:
+      value: launchTime
+    component: LaunchTimer
+    className: sq-timer--default
+  - component: HeroContent
+    xheader: Thank you for visiting the Submission Page.
+    className: sq-hero-content--center
+    subHeader: |
+      Online worksheet submissions will <span class="sq-text-error">CLOSE</span> on: ##dateFullTime|launchEnded##

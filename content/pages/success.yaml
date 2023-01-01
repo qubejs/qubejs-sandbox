@@ -1,0 +1,17 @@
+title: Request Success
+template: apps/core/templates/page
+className: sq-page sq-success-page
+layout: apps/rto/layouts/page-spa
+containerTemplate: Dashboard
+container: DefaultContent
+items:
+    - header: Request submitted successfully
+      subHeader: Thanks for being awesome! We have received your message.
+      component: HeroContent
+      className: sq-hero-content--right-aligned sq-hero-content--image-on-top
+      imageUrl: /client/assets/svg/icons/checked-1.svg
+      links:
+        - buttonText: New Request
+          type: Button
+          variant: outlined
+          to: /content/en/request

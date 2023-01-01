@@ -1,0 +1,14 @@
+title: Sales ended
+template: apps/core/templates/page
+className: sq-page sq-error-page
+layout: apps/crm/layouts/page-spa
+containerTemplate: Homepage
+container: DefaultContent
+items:
+    - component: HeroContent
+      header: Sales ended
+      subHeader: |
+       Sales will <span class="sq-text-success"> OPEN</span>  ##dateFullTime|launchTime## 
+       <br/>
+        Sales will  <span class="sq-text-error"> CLOSE</span> ##dateFullTime|launchEnded## 
+      className: 

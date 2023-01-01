@@ -1,0 +1,40 @@
+.sq-template--dashobard {
+  .sq-template__header {
+    &.primary {
+      background-color: $sq-color-primary;
+    }
+  }
+}
+.sq-template--full-page {
+  width: 100%;
+  min-height: 100vh;
+}
+.sq-template {
+  &--flex-page {
+    display: flex;
+    flex-direction: column;
+    .sq-template__content {
+      flex-grow: 1;
+    }
+  }
+
+  &__footer-text {
+    text-align: center;
+    color: $sq-color-gray;
+    padding: 20px 0;
+    background-color: $sq-color-gray-lightest;
+  }
+}
+.sq-app__main {
+  .sq-global-navigation__brand {
+    width: auto !important;
+  }
+  .sq-global-navigation__wrapper {
+    padding: 5px;
+  }
+
+  .sq-icon--dan-wide {
+    width: 140px;
+    height: auto;
+  }
+}

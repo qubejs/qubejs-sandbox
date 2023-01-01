@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iframe Form</title>
+  <script src="http://localhost:3011/client/libs/jquery/jquery.min.js"></script>
+  <style>
+    iframe {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+  <iframe id="frame" onload="onLoad()" src="http://localhost:3011/content/en/mpv2/register"></iframe>
+  <script type="text/javascript">
+    function setHeight(height) {
+      $('#frame').height(height)
+    }
+    function onLoad() {
+      console.log($('#frame').contents())
+    }
+    // window.addEventListener("message", (event, args) => {
+    //   console.log(event, args)
+    //   setHeight($(event.currentTarget.document).height());
+    // }, false);
+  </script>
+
+</body>
+
+</html>

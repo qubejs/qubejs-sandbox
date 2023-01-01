@@ -1,0 +1,14 @@
+title: Sandbox Home
+template: apps/core/templates/page
+className: sq-content-page--full-width
+layout: apps/crm/layouts/page-spa
+containerTemplate: Homepage
+
+items:
+  # First image with home content
+  - eyebrow: |
+      #eyebrow
+    header: You Header goes here
+    subHeader: Content description goes herer
+    component: HeroContent
+    className: sq-hero-content--center-aligned
